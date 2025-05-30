@@ -15,7 +15,8 @@ import matplotlib.pyplot as plt
 # plt.show()
 
 # Load the EEG data
-raw = mne.io.read_raw_edf('Downloads/sub-01_task-run1_eeg.edf', preload=True)
+raw = mne.io.read_raw_edf('/Users/larineouyang/Downloads/eeg(s)/sub-01_task-run1_eeg.edf', preload=True)
+raw = mne.io.read_raw_edf('/Users/larineouyang/Downloads/eeg(s)/sub-01_task-run6_eeg.edf', preload=True)
 
 # Plot the raw EEG data
 raw.plot(duration=10, n_channels=30, scalings='auto')
